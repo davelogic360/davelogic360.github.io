@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    font-family: 'K2D', Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+a:hover {
+    color: #E76A0F;
+}
+
+
+footer{
+    display: block;
+    background-color:#313131;
+    position: absolute;
+    width: 1000px;
+    height: 75px;
+}
+
+.page-width {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px; /* Optional padding for the container */
+}
+
+#banner-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: snow;
+}
+
+#davelogic-logo {
+    margin: 50px;
+}
+
+#section-intro {
+    color: #313131;
+    background-color: snow;
+    padding: 25px;
+}
+
+

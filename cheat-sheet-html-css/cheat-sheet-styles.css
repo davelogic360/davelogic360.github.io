@@ -1,0 +1,243 @@
+/* Setting the overall styles for the body */
+body {
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Restricting the maximum width and centering the content */
+.page-width {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Styles for the header element */
+header {
+    background-color: #313131;
+    height: 89px;
+    width: 1000px;
+    position: fixed; /* Fixed position to remain at the top */
+    margin: 0 auto;
+    display: flex; /* Flex container */
+    z-index: 1000; /* Z-index for stacking */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+}
+
+h1 {
+    color: #E76A0F;
+}
+
+/* Styles for the logo container */
+.logo-container {
+    background-color: #313131;
+    width: 200px;
+    height: 89px;
+}
+
+/* Styles for the logo image */
+.logo-container img {
+    width: 135px;
+    height: 80px;
+    padding: 5px;
+}
+
+/* Styles for the title container */
+.title-container {
+    background-color: #313131;
+    height: 100%;
+    flex: 0.75; /* Take 75% of the remaining space */
+}
+
+/* Styles for the title text */
+.title-container h1 {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 17px 0px 0px 0px;
+}
+
+/* Styles for the navigation container */
+.title-navigation {
+    background-color: #313131;
+    align-items: end;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    flex: 1; /* Take remaining space */
+}
+
+/* Styles for individual navigation items */
+.top-navigation li {
+    display: inline-block;
+    padding: 1rem;
+    
+}
+
+.top-navigation a {
+    color: whitesmoke;
+    text-decoration: none; /*removes underline*/
+    
+}
+
+.top-navigation a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
+section h1 {
+
+    text-align: center;
+    padding: 25px 0 0 10px;
+    margin: 0;
+}
+
+
+article {
+    margin: 0;
+    padding: 0;
+}
+
+
+article h2 {
+    color: #313131;
+    padding-top: 25px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+article h3 {
+
+    text-align: left;
+    padding: 25px;
+    margin: 0;
+    color: #E76A0F;
+}
+
+.intro {
+    margin-left: 25px;
+    margin-top:30px;
+}
+.intro a:hover {
+    color:#E76A0F;
+}
+
+
+/* Styles for the Git section */
+#section-git {
+    margin-top: 89px;
+    background-color: snow;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding-bottom: 50px;
+}
+
+#section-git h1 {
+    background-image: url("/img/gitbash-background.jpg");
+    padding-bottom: 25px;
+    color: snow;
+}
+
+/* Styles for the HTML section */
+#section-html {
+    background-color: snow;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+    z-index: 800; 
+    padding-bottom: 50px;
+}
+
+#section-html h1 {
+    background-image: url("/img/html-code.jpg");
+    padding-bottom: 25px;
+    color:snow;
+    
+}
+
+/* Styles for the CSS section */
+#section-css {
+    background-color: blue;
+    z-index: 700; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: 900px; /* Sample height for the css section */
+}
+
+/* Styles for the md section */
+#section-md {
+    background-color: green;
+    z-index: 600; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: 900px; /* Sample height for the md section */
+}
+
+
+/* Table formatting */
+
+.code {
+    font-family: monospace;
+    font-size: 14px;
+    background-color: lightgrey;
+    font-style: italic;
+}
+
+table {
+    width: 75%;
+    margin: 0 auto;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    border-collapse:collapse;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+td {
+    border: 0.5px solid gray;   
+   
+}
+
+/* Format the table column headers */
+
+thead th {
+    background-color: #313131;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 14px;
+    border: 0.5px solid whitesmoke;
+}
+
+/* Format the table row headers */
+
+
+tbody th {
+    background-color: gray;
+    border: 0.5px solid whitesmoke;
+    padding: 5px;
+    text-align: left;
+}
+
+tr {
+    background-color: whitesmoke; 
+}
+
+tr:nth-child(even) { 
+    background-color: darkgray; 
+}
+
+aside {
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.useful-links {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 50%;
+    border:1px solid #E76A0F;
+}

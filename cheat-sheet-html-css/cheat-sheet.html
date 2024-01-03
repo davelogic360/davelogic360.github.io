@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="/cheat-sheet-html-css/cheat-sheet-styles.css">
+</head>
+
+<body>
+    <div class="page-width">
+        <header>
+            <a href="../index.html">
+            <div class="logo-container">
+                <img src="/img/main_logo.png"></div>
+            </a>
+            <div class="title-container">
+                <h1>Engineering Cheat Sheet</h1>
+            </div>
+            <div class="title-navigation">
+                <nav class="top-navigation">
+                    <ul>
+                        <li><a href="#section-git">GIT</a></li>
+                        <li><a href="#section-html">HTML</a></li>
+                        <li><a href="#section-css">CSS</a></li>
+                        <li><a href="#section-md">MD</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="section-git">
+                <h1>GIT Commands</h1>
+                <div class="intro">
+                    <p>This section contains a few useful notes and commands for navigating around Git:</p>
+                    <ul>
+                        <li><a href="#new-projects">Creating new project</a></li>
+                        <li><a href="#basic-commands">Basic Commands</a></li>
+                        <li><a href="#branching-merging">Branching and Merging</a></li>
+                        <li><a href="#updating-projects">Updating Projects</a></li>
+                        <li><a href="#git-tools">Git Tools</a></li>
+                    </ul>
+                </div>
+                <article>
+                    <h2 id="new-projects">Creating new projects</h2>
+                    <ul>
+                        <li>In Visual Studio Code> File > Open Folder</li>
+                        <li>Navigate to ..Documents > Projects and create a new folder for the project</li>
+                        <li>Open Folder</li>
+                    </ul>
+                    <table>
+                        <thead>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git init&gt;</span></th>
+                                <td>Initialises a Git repository</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git clone
+                                        https://github.com/davelogic360/codecademy.git&gt;</span></th>
+                                <td>Create a local copy of the repository</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <h2 id="basic-commands">Basic Commands</h2>
+                    <table>
+                        <thead>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git status&gt;</span></th>
+                                <td>Status check</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git add [file-name.txt]&gt;</span></th>
+                                <td>Adds a file ready for staging</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git add -A&gt;</span></th>
+                                <td>All file changes added to staging area</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git commit -m "[Commit message]"&gt;</span></th>
+                                <td>Commits changes and add a message</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git rm -r [file-name.txt]&gt;</span></th>
+                                <td>Removes a file or folder</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <h2 id="branching-merging">Branching and Merging</h2>
+                    <table>
+                        <thead>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git branch&gt;</span></th>
+                                <td>List all branches (asterisk is current)</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git branch -a&gt;</span></th>
+                                <td>List all local and remote branches</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git branch [branch name]&gt;</span></th>
+                                <td>Create a new branch</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git branch -d"&gt;</span></th>
+                                <td>Deletes a branch</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git branch origin --delete&gt;</span></th>
+                                <td>Delete a remote branch</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git branch -m [old branch name] [new branch
+                                        name]&gt;</span></th>
+                                <td>Rename a local branch</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git checkout -b [branch name]&gt;</span></th>
+                                <td>Create a new branch and switches to it</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git checkout -b [branch name] origin/[branch
+                                        name]&gt;</span></th>
+                                <td>Clone a remote branch and switch to it</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git checkout [branch name]&gt;</span></th>
+                                <td>Switch to a branch</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git checkout -&gt;</span></th>
+                                <td>Switch to the branch last checked out</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git checkout --[file-name.txt]&gt;</span></th>
+                                <td>Discard changes to a file</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git merge [branch name]&gt;</span></th>
+                                <td>Merge a branch to the active branch</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git merge [source branch] [target
+                                        branch]&gt;</span></th>
+                                <td>Merge a branch to a target branch</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git stash&gt;</span></th>
+                                <td>Stash changes to a dirty working directory</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git stash clear&gt;</span></th>
+                                <td>Remove all stashed entries</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <h2 id="updating-projects">Updating Projects</h2>
+                    <table>
+                        <thead>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git push origin [branch name]&gt;</span></th>
+                                <td>Push a branch to your remote repository</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git push -u origin [branch name]&gt;</span></th>
+                                <td>Push changes to remote repository and remember branch</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git push&gt;</span></th>
+                                <td>Push all change to remote repository</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git push origin --delete [branch name]&gt;</span>
+                                </th>
+                                <td>Deletes a remote branch</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git pull&gt;</span></th>
+                                <td>Pull change from remote repository</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git pull origin [branch name]&gt;</span></th>
+                                <td>Pull changes from remote respository for a given branch</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </article>
+                <aside>
+                    <p>To merge a branch back in to main:</p>
+                    <ol>
+                        <li><span class="code">git checkout main</span> - Switch to main</li>
+                        <li><span class="code">git pull origin main</span> - Get latest changes from remote</li>
+                        <li><span class="code">git merge [branch name] </span> - merge change from branch to main</li>
+                        <li><span class="code">git push origin main</span> - push changes back to remote</li>
+                    </ol>
+                </aside>
+                <article>
+                    <h2 id="git-tools">Git Tools</h2>
+                    <table>
+                        <thead>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git log&gt;</span></th>
+                                <td>View changes</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git log --summary&gt;</span></th>
+                                <td>View detailed changes</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git log --oneline&gt;</span></th>
+                                <td>View brief changes</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;git diff [source branch] [target
+                                        branch]&gt;</span></th>
+                                <td>View changes before merging</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+            <section id="section-html">
+                <h1>HTML</h1>
+                <div class="intro">
+                    <p>This section contains a few useful notes and commands for navigating around HTML:</p>
+                    <ul>
+                        <li><a href="#html-hierachy">HTML Hierachy</a></li>
+                        <li><a href="#html-tables">HTML Tables</a></li>
+                    </ul>
+                </div>
+                <article>
+                    <h2 id="html-hierachy">HTML Hierachy</h2>
+                    <div class="useful-links">
+                        <p>W3Schools HTML Tags Reference: <a href="https://www.w3schools.com/tags/default.asp"
+                                target="_blank">Click here</a></p>
+                    </div>
+                    <table>
+                        <thead>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col"><span class="code">&lt;html&gt;</span></th>
+                                <td>HTML</td>
+                                <td>Container for all the HTML code on the page </td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;head&gt;</span></th>
+                                <td>Head</td>
+                                <td>Container for metadata such as Titles, links to CSS and metadata</td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;title&gt;</span></th>
+                                <td>Head Title</td>
+                                <td>Used to name the page in browser</td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;link&gt;</span></th>
+                                <td>Head Link</td>
+                                <td>Used to link page to things like style sheet and fonts</td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;body&gt;</span></th>
+                                <td>Body</td>
+                                <td>Incs headings, paragraphs, images, hyperlinks, tables, lists, etc</td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;header&gt;</span></th>
+                                <td>Body Header</td>
+                                <td>Often contains heading, logos and navigation</td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;nav&gt;</span></th>
+                                <td>Header Nav</td>
+                                <td>Often used for the main site navigation</td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;main&gt;</span></th>
+                                <td>Body Main</td>
+                                <td>Page content unique to that page</td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;section&gt;</span></th>
+                                <td>Main Section</td>
+                                <td>Defines a section of infromation on the page</td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;articles&gt;</span></th>
+                                <td>Section Articles</td>
+                                <td>Information relevant to the section its in</td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;aside&gt;</span></th>
+                                <td>Articles Aside</td>
+                                <td>The aside content should be indirectly related to the surrounding content.</td>
+                            </tr>
+                            <tr>
+                                <th><span class="code">&lt;footer&gt;</span></th>
+                                <td>Body Footer</td>
+                                <td>Typically contains contact and author information</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <h2 id="html-tables">HTML Table References</h2>
+                    <div class="useful-links">
+                        <p>W3Schools HTML Tables Reference: <a href="https://www.w3schools.com/html/html_tables.asp"
+                                target="_blank">Click here</a></p>
+                    </div>
+                    <h3>Table Tags</h2>
+                        <table>
+                            <thead>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="col"><span class="code">&lt;table&gt;</span></th>
+                                    <td>Table</td>
+                                    <td>The wrapper element for all HTML tables.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="code">&lt;thead&gt;</span></th>
+                                    <td>Table Head</td>
+                                    <td>The set of rows defining the column headers in a table.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="code">&lt;tbody&gt;</span></th>
+                                    <td>Table Body</td>
+                                    <td>The set of rows containing actual table data.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="code">&lt;tr&gt;</span></th>
+                                    <td>Table Row</td>
+                                    <td>The table row container.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="code">&lt;td&gt;</span></th>
+                                    <td>Table Data</td>
+                                    <td>The table row container.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="code">&lt;tfoot&gt;</span></th>
+                                    <td>Table Foot</td>
+                                    <td>The set of rows defining the footer in a table.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </article>
+                <article>
+                    <h3>Table Tags</h2>
+                        <table>
+                            <thead>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="col"><span class="code">&lt;colspan&gt;</span></th>
+                                    <td>Column Span</td>
+                                    <td>Defines how many columns a td element should span.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="code">&lt;rowspan&gt;</span></th>
+                                    <td>Row span</td>
+                                    <td> Defines how many rows a td element should span.</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                </article>
+            </section>
+            <section id="section-css">
+                <h1>CSS</h1>
+                <article>
+                    <h2>CSS References - COMING SOON</h2>
+                </article>
+
+            </section>
+            <section id="section-md">
+                <h1>MarkDown</h1>
+                <article>
+                    <h2>MD References - COMING SOON</h2>
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+
+        </footer>
+
+    </div>
+
+</body>
+
+
+
+
+
+</html>
