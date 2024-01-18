@@ -1,43 +1,300 @@
-body {
+/* Universal Styles */
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+  }
+  
+  body {
     background-color: black;
-    font-family: 'K2D', Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-}
-
-a:hover {
+    /* Remove default body margin */
+  
+  }
+  
+  h1 {
+    font-family: "k2d";
+    font-size: 32px;
+    width: 1280px;
     color: #E76A0F;
-}
-
-
-footer{
-    display: block;
-    background-color:#313131;
-    position: absolute;
-    width: 1000px;
-    height: 75px;
-}
-
-.page-width {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px; /* Optional padding for the container */
-}
-
-#banner-logo-container {
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .header-content {
+    top: 25px;
+    right: 0;
+    left: 0;
+    position: fixed;
     display: flex;
+    width: 1200px;
+    height: 150px;
+    background-color: #313131;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 0 auto;
+    z-index: 99;
+  }
+  
+  .main-logo {
+    display: flex;
+    background-image: url('./img/main-logo-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto;
+    margin-left: 25px;
+    flex: 1;
+  }
+  
+  .middle-section {
+    display: flex;
+    height: 150px;
+    flex: 1;
+  }
+  
+  .top-nav-container {
+    display: flex;
+    height: 150px;
+    margin-right: 25px;
+    flex: 2;
+    align-items: center;
+    justify-content: flex-end;
+  
+  }
+  
+  .top-nav ul {
+    display: inline-flex;
+    margin-right: 50px;
+  }
+  
+  .top-nav li {
+    display: inline-block;
+    padding: 0 25px;
+  }
+  
+  .top-nav a {
+    color: #E76A0F;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .top-nav a:hover {
+    color: snow;
+    text-decoration: underline;
+  }
+  
+  /* BANNER STYLES */
+  
+  .banner-container {
+  
+    display: flex;
+    width: 1280px;
+    height: 650px;
+    background-image: url('./img/lambo.jpg');
+    background-size: cover;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+  
+  }
+  
+  .mission-statement {
+    display: flex;
+    width: 800px;
+    height: 100px;
     background-color: snow;
-}
-
-#davelogic-logo {
-    margin: 50px;
-}
-
-#section-intro {
-    color: #313131;
+    opacity: 0.6;
+    margin-top: 175px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quote {
+    font-family: "k2d";
+    font-size: 30px;
+  }
+  
+  
+  
+  /* TEAM STYLES  */
+  
+  .team {
+    display: flex;
+    width: 1280px;
+    background-color: #313131;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+  
+  .person {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 440px;
     background-color: snow;
-    padding: 25px;
-}
-
-
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .person h2 {
+    font-family: "k2d";
+    display: block;
+    text-align: center;
+  
+  }
+  
+  .person p {
+    text-align: center;
+    margin-bottom: 30px;
+  
+  }
+  
+  /* PORTFOLIO SECTION */
+  
+  .portfolio-container {
+    display: flex;
+    width: 1280px;
+    margin-bottom: 500px;
+    background-color: #313131;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portfolio {
+    display: flex;
+    width: 90%;
+    min-height: 450px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.5);
+  }
+  
+  .project h2 {
+    font-family: "k2d";
+    color: snow;
+    text-align: center;
+  }
+  
+  .project-intro {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: snow;
+    margin: 0 15px 15px 15px;
+    text-align: center;
+  }
+  
+  
+  
+  /* FOOTER CONTENT */
+  
+  .footer-content {
+    display: flex;
+    width: 1280px;
+    min-height: 100px;
+    background-color: #E76A0F;
+    border: 2px solid #E76A0F;
+    border-radius: 25px;
+    margin: 100px auto;
+  }
+  
+  .footer-content h2 {
+    font-family: "k2d";
+    color: snow;
+    text-align: center;
+  }
+  
+  .footer-intro {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: snow;
+    margin: 0 15px 15px 15px;
+    text-align: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 490px;
+    background-color: #313131;
+    margin: 20px;
+  }
+  
+  .contact-details {
+    color: snow;
+    font-size: 18px;
+    margin-left: 50px
+  }
+  
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 490px;
+    background-color: #313131;
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  
+  .socials-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 490px;
+    background-color: #313131;
+    margin: 20px;
+  }
+  
+  .socials-info a {
+    display: flex;
+    color: snow;
+    margin-left: 20px;
+    font-size: 18px;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .socials-info a:hover {
+    color: #E76A0F;
+    text-decoration: underline;
+  }
+  
+  .github {
+    display: flex;
+    align-items: center;
+    margin: 15px 30px;
+  }
+  
+  .discord {
+    display: flex;
+    align-items: center;
+    margin: 15px 30px;
+  }
+  
+  .copyright {
+    color: snow;
+    text-align: center;
+  }
